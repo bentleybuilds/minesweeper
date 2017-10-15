@@ -59,10 +59,10 @@ const flipTile = (playerBoard, bombBoard, rowIndex, columnIndex)=>{
     playerBoard[rowIndex][columnIndex]= getNumberOfNeighborBombs(bombBoard,rowIndex,columnIndex);
   }
 }
+}
 return board;
 }
-}
-}
+
 const printBoard = (board) =>{
   console.log(board.map(row => row.join(' | ')).join('\n'));
 };
